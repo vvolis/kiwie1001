@@ -1628,7 +1628,7 @@ contract Kiwie1001 is
 
 
     constructor() 
-        public ERC721Base("Kiwie1001", "KIWIE1001", "https://api-mainnet.rarible.com/contractMetadata/{address}", "https://ipfs.daonomic.com") 
+        public ERC721Base("Kiwie1001", "KIWIE1001", "https://api-mainnet.rarible.com/contractMetadata/{address}", "https://gateway.pinata.cloud/ipfs/") 
     {
         transferOwnership(msg.sender);
         _currentIdx = 0;
