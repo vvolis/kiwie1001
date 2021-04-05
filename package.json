@@ -11,7 +11,8 @@
     "chai-as-promised": "^7.1.1",
     "printf": "^0.6.1",
     "truffle": "^5.3.0",
-    "truffle-hdwallet-provider": "^1.0.17"
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-plugin-verify": "^0.5.7"
   },
   "devDependencies": {
     "@openzeppelin/contracts": "^4.0.0",

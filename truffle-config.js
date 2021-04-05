@@ -10,7 +10,8 @@ module.exports = {
     development: {
       host: "127.0.0.1",
       port: 7545,
-      network_id: "*" // Match any network id
+      network_id: "*", // Match any network id,
+      //gasPrice: 112000000000,
     },
     rinkeby: {
         provider: function() { 
@@ -18,7 +19,7 @@ module.exports = {
         },
         network_id: 4,
         gas: 6800000,
-        gasPrice: 10000000000,
+        //gasPrice: 112000000000,
     }
   },
   contracts_directory: './contracts/',
@@ -26,10 +27,17 @@ module.exports = {
   compilers: {
     solc: {
         version: "^0.5.0",
-      optimizer: {
-        enabled: true,
-        runs: 200
-      }
+        optimizer: {
+            enabled: true,
+            runs: 200
+        },
+        evmVersion: 'petersburg'
     }
+  },
+  plugins: [
+    'truffle-plugin-verify'
+  ],
+  api_keys: {
+    etherscan: '128I2SB6XU5NDFYVZEHVXFHAJC1MZNNDBU'
   }
 }
