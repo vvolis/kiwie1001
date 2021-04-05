@@ -1621,28 +1621,20 @@ contract Kiwie1001 is
     ERC721Burnable,
     ERC721Base
 {
-
-    //TODO::VVV Do we need contractUri???
-    //TODO::VVLet owner change token uri (not onlyu prefix)
-
     uint public _currentIdx;
-    mapping(uint256 => bool) public _isAlive;
-    mapping(uint256 => string) public _aliveIPFSHash;
-    mapping(uint256 => string) public _ghostIPFSHash;
+    mapping(uint256 => bool) public isAlive;
+    mapping(uint256 => string) public aliveIPFSHash;
+    mapping(uint256 => string) public ghostIPFSHash;
 
 
     constructor() 
-        public ERC721Base("Kiwie1001", "KIWIE1001", "contracturi.com", "tokenUriPrefix.com/") 
+        public ERC721Base("Kiwie1001", "KIWIE1001", "https://api-mainnet.rarible.com/contractMetadata/{address}", "https://ipfs.daonomic.com") 
     {
         transferOwnership(msg.sender);
         _currentIdx = 0;
     }
 
-   /*struct Fee {
-        address payable recipient;
-        uint256 value;
-    }*/
-
+    //Fees = % * 100. So 5% = 500
     function mint(string memory tokenURI, string memory aliveIpfsHash, Fee[] memory _fees) onlyOwner public 
     {
         _currentIdx = _currentIdx + 1;
@@ -1651,16 +1643,21 @@ contract Kiwie1001 is
         _mint(msg.sender, tokenId, _fees);
         _setTokenURI(tokenId, tokenURI);
 
-        _isAlive[tokenId] = true;
-        _aliveIPFSHash[tokenId] = aliveIpfsHash;
+        isAlive[tokenId] = true;
+        aliveIPFSHash[tokenId] = aliveIpfsHash;
     }
 
     function kill(uint256 tokenId, string memory tokenURI, string memory ghostIpfsHash) onlyOwner public 
     {
-        require(_isAlive[tokenId]);
-        _isAlive[tokenId] = false;
-        _ghostIPFSHash[tokenId] = ghostIpfsHash;
+        require(isAlive[tokenId]);
+        isAlive[tokenId] = false;
+        ghostIPFSHash[tokenId] = ghostIpfsHash;
         _setTokenURI(tokenId, tokenURI);
+    }
+
+    function setTokenURI(uint256 tokenId, string memory tokenURI) public onlyOwner 
+    {
+       _setTokenURI(tokenId, tokenURI);
     }
 
     function setTokenURIPrefix(string memory tokenURIPrefix) public onlyOwner 

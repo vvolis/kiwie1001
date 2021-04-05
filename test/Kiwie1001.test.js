@@ -1,6 +1,4 @@
-const { assert } = require('chai')
-//const { ethers } = require("hardhat");
-//const { Item } = require('react-bootstrap/lib/breadcrumb')
+const { assert } = require('chai');
 
 const Kiwie1001 = artifacts.require('./Kiwie1001.sol')
 
@@ -37,12 +35,24 @@ contract('Kiwie1001', (accounts) => {
             const symbol = await contract.symbol();
             assert.equal(symbol, 'KIWIE1001');
         });
+
+        it('has a contractURI', async() => {
+            const contractURI = await contract.contractURI();
+            console.log("Contract uri: " + contractURI)
+            assert.isTrue(!!contractURI);
+        });
+
+        it('has a tokenURIPrefix', async() => {
+            const baseURI = await contract.tokenURIPrefix();
+            console.log("Base uri: " + baseURI)
+            assert.isTrue(!!baseURI);
+        });
     })
 
 
     describe('minting', async() => {
         it('creates a new token', async() => {
-            const result = await contract.mint("mintTokenUri", "aliveIPFSHash", [ {recipient: accounts[0], value:20}]);
+            const result = await contract.mint("mintTokenUri", "aliveIPFSHash", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}], {from: accounts[0]});
             const totalSupply = await contract.totalSupply();
             //Success 
             assert.equal(totalSupply, 1);
@@ -52,53 +62,83 @@ contract('Kiwie1001', (accounts) => {
             assert.equal(event.to, accounts[0], 'Reciever is correct');
 
             const token = await contract.tokenOfOwnerByIndex.call(accounts[0], 0)
-            console.log("Yoyoyo")
-            console.log(await contract.tokenURI(token));
+            //console.log("Minted tokenUri:", await contract.tokenURI(token));
         });
 
 
-        it('can kill it once', async() => {
+        it('only owner can kill it once', async() => {
             const tokenId = await contract.tokenOfOwnerByIndex.call(accounts[0], 0);
 
             const tokenUri1 = await contract.tokenURI(tokenId);
 
-            await contract.kill(tokenId, "deadTokenUri", "deadIPFSHash");
+            await contract.kill(tokenId, "deadTokenUri", "deadIPFSHash", {from: accounts[1]}).should.be.rejected;
+
+            await contract.kill(tokenId, "deadTokenUri", "deadIPFSHash", {from: accounts[0]})
             const tokenUri2 = await contract.tokenURI(tokenId);
-            console.log(tokenUri1, tokenUri2);
+            //console.log("Uri before detah:" + tokenUri1);
+            //console.log("Uri after death:" + tokenUri2);
 
             assert.notEqual(tokenUri1, tokenUri2);
 
             await contract.kill(tokenId, "deadTokenUri", "deadIPFSHash").should.be.rejected;
         });
+
+        it('only owner can mint', async() => {
+            await contract.mint("mintTokenUri", "aliveIPFSHash", [{recipient: accounts[0], value:200}], {from: accounts[1]}).should.be.rejected;
+        });
     });
 
 
+    describe('setting data', async() => {
+        it('Only owner can set tokenUriPrefix', async() => {
+            await contract.setTokenURIPrefix("prefix/", {from: accounts[1]}).should.be.rejected;
+            await contract.setTokenURIPrefix("prefix/", {from: accounts[0]}).should.be.fulfilled;
+        });
 
+        it('Only owner can set contract uri', async() => {
+            await contract.setContractURI("contractPrefix/", {from: accounts[1]}).should.be.rejected;
+            await contract.setContractURI("contractPrefix/", {from: accounts[0]}).should.be.fulfilled;
+        });
 
+        it('Only owner can set token uri', async() => {
+            await contract.setTokenURI(1, "tokenUri", {from: accounts[1]}).should.be.rejected;
+            await contract.setTokenURI(1, "tokenUri", {from: accounts[0]}).should.be.fulfilled;
+        });
 
-    describe('indexing', async() => {
-        it('lists kiwies', async() => {
+    });
+    
+    describe('retrieving data', async() => {
+        it('List token specific data', async() => {
+            var printf = require('printf');
             //Mint 3 tokens
-            await contract.mint("mintTokenUri2", "aliveIPFSHash2", []);
-            await contract.mint("mintTokenUri3", "aliveIPFSHash3", []);
-            await contract.mint("mintTokenUri4", "aliveIPFSHash4", []);
+            await contract.mint("mintTokenUri2", "aliveIPFSHash2", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}]);
+            await contract.mint("mintTokenUri3", "aliveIPFSHash3", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}]);
+            await contract.mint("mintTokenUri4", "aliveIPFSHash4", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}]);
 
             const totalSupply = await contract.totalSupply();
 
-            let kiwie
-            let result = []
             for (var i = 0; i < totalSupply; i++) {
-                kiwie = await contract.tokenByIndex(i);
+                const tokenId = await contract.tokenByIndex(i);
 
-                //console.log(await contract._liveURIs.call(kiwie));
-                //VVVV
-                //console.log(await contract.tokenURI(i - 1));
+                const tokenUri = await contract.tokenURI(tokenId);
+                const alive = await contract.isAlive.call(tokenId);
+                const aliveIPFS = await contract.aliveIPFSHash.call(tokenId);
+                const ghostIPFS = await contract.ghostIPFSHash.call(tokenId);
 
+                //const fee = await contract.getFeeBps.call(tokenId);
+                //console.log(fee);
 
-                //result.push(color);
+                console.log(printf('Tokenid:[%s] uri:[%s], isAlive:[%s], aliveipfs:[%s], ghostIpfs:[%s]', tokenId, tokenUri, alive, aliveIPFS, ghostIPFS));
+                
+                assert.isTrue(!!aliveIPFS);
+                assert.isTrue(!!tokenUri);
+
+                if (alive) {
+                    assert.isFalse(!!ghostIPFS);
+                } else {
+                    assert.isTrue(!!ghostIPFS);
+                }
             }
-            //let expected = ['#EC058E',"#5386E4","#FFFFFF","#000000"]
-            //assert.equal(result.join(','), expected.join(','));
         });
     });
 
