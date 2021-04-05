@@ -3,7 +3,7 @@
  */
 
 pragma solidity ^0.5.0;
-#pragma experimental ABIEncoderV2;
+pragma experimental ABIEncoderV2;
 
 /*
  * @dev Provides information about the current execution context, including the
@@ -1631,17 +1631,19 @@ contract Kiwie1001 is
     mapping(uint256 => string) public _ghostIPFSHash;
 
 
-    constructor(
-        string memory contractURI,
-        string memory tokenURIPrefix
-    ) public ERC721Base("Kiwie1001", "KIWIE1001", contractURI, tokenURIPrefix) 
+    constructor() 
+        public ERC721Base("Kiwie1001", "KIWIE1001", "contracturi.com", "tokenUriPrefix.com/") 
     {
         transferOwnership(msg.sender);
         _currentIdx = 0;
     }
 
+   /*struct Fee {
+        address payable recipient;
+        uint256 value;
+    }*/
 
-    function mint(string memory name, string memory tokenURI, Fee[] memory _fees) onlyOwner public 
+    function mint(string memory tokenURI, string memory aliveIpfsHash, Fee[] memory _fees) onlyOwner public 
     {
         _currentIdx = _currentIdx + 1;
         uint256 tokenId = _currentIdx;
@@ -1650,23 +1652,24 @@ contract Kiwie1001 is
         _setTokenURI(tokenId, tokenURI);
 
         _isAlive[tokenId] = true;
-        _liveURIs[tokenId] = uri;
-        _tokenNames[tokenId] = name;
+        _aliveIPFSHash[tokenId] = aliveIpfsHash;
     }
 
-    function kill(uint256 tokenId, string memory ghostIpfsHash, string tokenUri) onlyOwner public 
+    function kill(uint256 tokenId, string memory tokenURI, string memory ghostIpfsHash) onlyOwner public 
     {
-        require(_alive[tokenId]);
+        require(_isAlive[tokenId]);
         _isAlive[tokenId] = false;
         _ghostIPFSHash[tokenId] = ghostIpfsHash;
         _setTokenURI(tokenId, tokenURI);
     }
 
-    function setTokenURIPrefix(string memory tokenURIPrefix) public onlyOwner {
+    function setTokenURIPrefix(string memory tokenURIPrefix) public onlyOwner 
+    {
         _setTokenURIPrefix(tokenURIPrefix);
     }
 
-    function setContractURI(string memory contractURI) public onlyOwner {
+    function setContractURI(string memory contractURI) public onlyOwner 
+    {
         _setContractURI(contractURI);
     }
 }
