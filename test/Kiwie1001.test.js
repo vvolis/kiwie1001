@@ -38,13 +38,13 @@ contract('Kiwie1001', (accounts) => {
 
         it('has a contractURI', async() => {
             const contractURI = await contract.contractURI();
-            console.log("Contract uri: " + contractURI)
+            //console.log("Contract uri: " + contractURI)
             assert.isTrue(!!contractURI);
         });
 
         it('has a tokenURIPrefix', async() => {
             const baseURI = await contract.tokenURIPrefix();
-            console.log("Base uri: " + baseURI)
+            //console.log("Base uri: " + baseURI)
             assert.isTrue(!!baseURI);
         });
     })
@@ -106,7 +106,7 @@ contract('Kiwie1001', (accounts) => {
         });
 
     });
-    
+
     describe('retrieving data', async() => {
         it('List token specific data', async() => {
             var printf = require('printf');
@@ -128,7 +128,7 @@ contract('Kiwie1001', (accounts) => {
                 //const fee = await contract.getFeeBps.call(tokenId);
                 //console.log(fee);
 
-                console.log(printf('Tokenid:[%s] uri:[%s], isAlive:[%s], aliveipfs:[%s], ghostIpfs:[%s]', tokenId, tokenUri, alive, aliveIPFS, ghostIPFS));
+                //console.log(printf('Tokenid:[%s] uri:[%s], isAlive:[%s], aliveipfs:[%s], ghostIpfs:[%s]', tokenId, tokenUri, alive, aliveIPFS, ghostIPFS));
                 
                 assert.isTrue(!!aliveIPFS);
                 assert.isTrue(!!tokenUri);
