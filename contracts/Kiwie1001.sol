@@ -1618,9 +1618,9 @@ contract Kiwie1001 is
     ERC721Base
 {
     uint public _currentIdx;
-    mapping(uint256 => bool) public isAlive;
-    mapping(uint256 => string) public aliveIPFSHash;
-    mapping(uint256 => string) public ghostIPFSHash;
+    //mapping(uint256 => bool) public isAlive;
+    //mapping(uint256 => string) public aliveIPFSHash;
+    //mapping(uint256 => string) public ghostIPFSHash;
 
 
     constructor() 
@@ -1639,15 +1639,15 @@ contract Kiwie1001 is
         _mint(msg.sender, tokenId, _fees);
         _setTokenURI(tokenId, tokenURI);
 
-        isAlive[tokenId] = true;
-        aliveIPFSHash[tokenId] = aliveIpfsHash;
+        //isAlive[tokenId] = true;
+        //aliveIPFSHash[tokenId] = aliveIpfsHash;
     }
 
     function kill(uint256 tokenId, string memory tokenURI, string memory ghostIpfsHash) onlyOwner public 
     {
-        require(isAlive[tokenId]);
-        isAlive[tokenId] = false;
-        ghostIPFSHash[tokenId] = ghostIpfsHash;
+        //require(isAlive[tokenId]);
+        //isAlive[tokenId] = false;
+        //ghostIPFSHash[tokenId] = ghostIpfsHash;
         _setTokenURI(tokenId, tokenURI);
     }
 
