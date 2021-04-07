@@ -52,7 +52,7 @@ contract('Kiwie1001', (accounts) => {
 
     describe('minting', async() => {
         it('creates a new token', async() => {
-            const result = await contract.mint("mintTokenUri", "aliveIPFSHash", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}], {from: accounts[0]});
+            const result = await contract.mint("mintTokenUri", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}], {from: accounts[0]});
             const totalSupply = await contract.totalSupply();
             //Success 
             assert.equal(totalSupply, 1);
@@ -71,20 +71,20 @@ contract('Kiwie1001', (accounts) => {
 
             const tokenUri1 = await contract.tokenURI(tokenId);
 
-            await contract.kill(tokenId, "deadTokenUri", "deadIPFSHash", {from: accounts[1]}).should.be.rejected;
+            await contract.setTokenURI(tokenId, "deadTokenUri", {from: accounts[1]}).should.be.rejected;
 
-            await contract.kill(tokenId, "deadTokenUri", "deadIPFSHash", {from: accounts[0]})
+            await contract.setTokenURI(tokenId, "deadTokenUri", {from: accounts[0]})
             const tokenUri2 = await contract.tokenURI(tokenId);
             //console.log("Uri before detah:" + tokenUri1);
             //console.log("Uri after death:" + tokenUri2);
 
             assert.notEqual(tokenUri1, tokenUri2);
 
-            await contract.kill(tokenId, "deadTokenUri", "deadIPFSHash").should.be.rejected;
+            //await contract.setTokenURI(tokenId, "deadTokenUri").should.be.rejected;
         });
 
         it('only owner can mint', async() => {
-            await contract.mint("mintTokenUri", "aliveIPFSHash", [{recipient: accounts[0], value:200}], {from: accounts[1]}).should.be.rejected;
+            await contract.mint("mintTokenUri", [{recipient: accounts[0], value:200}], {from: accounts[1]}).should.be.rejected;
         });
     });
 
@@ -111,9 +111,9 @@ contract('Kiwie1001', (accounts) => {
         it('List token specific data', async() => {
             var printf = require('printf');
             //Mint 3 tokens
-            await contract.mint("mintTokenUri2", "aliveIPFSHash2", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}]);
-            await contract.mint("mintTokenUri3", "aliveIPFSHash3", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}]);
-            await contract.mint("mintTokenUri4", "aliveIPFSHash4", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}]);
+            await contract.mint("mintTokenUri2", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}]);
+            await contract.mint("mintTokenUri3", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}]);
+            await contract.mint("mintTokenUri4", [{recipient: accounts[0], value:200}, {recipient: accounts[1], value:100}]);
 
             const totalSupply = await contract.totalSupply();
 
@@ -121,23 +121,23 @@ contract('Kiwie1001', (accounts) => {
                 const tokenId = await contract.tokenByIndex(i);
 
                 const tokenUri = await contract.tokenURI(tokenId);
-                const alive = await contract.isAlive.call(tokenId);
-                const aliveIPFS = await contract.aliveIPFSHash.call(tokenId);
-                const ghostIPFS = await contract.ghostIPFSHash.call(tokenId);
+                //const alive = await contract.isAlive.call(tokenId);
+                //const aliveIPFS = await contract.aliveIPFSHash.call(tokenId);
+                //const ghostIPFS = await contract.ghostIPFSHash.call(tokenId);
 
                 //const fee = await contract.getFeeBps.call(tokenId);
                 //console.log(fee);
 
                 //console.log(printf('Tokenid:[%s] uri:[%s], isAlive:[%s], aliveipfs:[%s], ghostIpfs:[%s]', tokenId, tokenUri, alive, aliveIPFS, ghostIPFS));
                 
-                assert.isTrue(!!aliveIPFS);
-                assert.isTrue(!!tokenUri);
+                //assert.isTrue(!!aliveIPFS);
+                //assert.isTrue(!!tokenUri);
 
-                if (alive) {
+                /*if (alive) {
                     assert.isFalse(!!ghostIPFS);
                 } else {
                     assert.isTrue(!!ghostIPFS);
-                }
+                }*/
             }
         });
     });

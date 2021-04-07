@@ -18,8 +18,16 @@ module.exports = {
          return new HDWalletProvider(mnemonic, "https://eth-rinkeby.alchemyapi.io/v2/spNgmminiS7sJxaVIBvEM3_ilefAmUzK");
         },
         network_id: 4,
-        gas: 6800000,
-        //gasPrice: 112000000000,
+        gas: 4547332, //149175 + 4198157
+        gasPrice: 150000000000,
+    },
+    mainnet: {
+        provider: function() { 
+         return new HDWalletProvider(mnemonic, "https://eth-mainnet.alchemyapi.io/v2/-Od2R0yXTYi8bgt6PAVGmFHlQ4PqtQ0u");
+        },
+        network_id: 1,
+        gas: 4547332,
+        gasPrice: 150000000000,
     }
   },
   contracts_directory: './contracts/',

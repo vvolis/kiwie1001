@@ -1631,23 +1631,12 @@ contract Kiwie1001 is
     }
 
     //Fees = % * 100. So 5% = 500
-    function mint(string memory tokenURI, string memory aliveIpfsHash, Fee[] memory _fees) onlyOwner public 
+    function mint(string memory tokenURI, Fee[] memory _fees) onlyOwner public 
     {
         _currentIdx = _currentIdx + 1;
         uint256 tokenId = _currentIdx;
 
         _mint(msg.sender, tokenId, _fees);
-        _setTokenURI(tokenId, tokenURI);
-
-        //isAlive[tokenId] = true;
-        //aliveIPFSHash[tokenId] = aliveIpfsHash;
-    }
-
-    function kill(uint256 tokenId, string memory tokenURI, string memory ghostIpfsHash) onlyOwner public 
-    {
-        //require(isAlive[tokenId]);
-        //isAlive[tokenId] = false;
-        //ghostIPFSHash[tokenId] = ghostIpfsHash;
         _setTokenURI(tokenId, tokenURI);
     }
 
