@@ -1618,10 +1618,6 @@ contract Kiwie1001 is
     ERC721Base
 {
     uint public _currentIdx;
-    //mapping(uint256 => bool) public isAlive;
-    //mapping(uint256 => string) public aliveIPFSHash;
-    //mapping(uint256 => string) public ghostIPFSHash;
-
 
     constructor() 
         public ERC721Base("Kiwie1001", "KIWIE1001", "https://api-mainnet.rarible.com/contractMetadata/{address}", "https://gateway.pinata.cloud/ipfs/") 
