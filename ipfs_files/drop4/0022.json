@@ -1,0 +1,29 @@
+{
+    "name": "POOLPARTY",
+    "description": "Please leave all sharp objects outside! This Kiwie is your best friend in sunny, lazy Sunday afternoons. It will never let you sink. Located in an abandoned swimming pool.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/GIFS/0022.gif",
+    "external_url": "https://kiwie1001.com/nft0022/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/MP4/0022.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "54.6914363"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "25.2926788"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0022/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "2m"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "name": "THERMAL",
+    "description": "Hiding from radars, this heated up Kiwie is located in a hard to reach location at a WW2 secret submarine base. It's there to stay for a long time. Artwork visible from the coast and is reachable only by boat.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmWXTy9vZhZoYz6dv5f6Q1bZjA2tqht2ihAR6Tb7e9EXNP/RARIBLE-0008.gif",
+    "external_url": "https://kiwie1001.com/nft0008/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmWXTy9vZhZoYz6dv5f6Q1bZjA2tqht2ihAR6Tb7e9EXNP/RARIBLE%200008.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "59.5784360"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "25.6211217"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0008/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "2m"
+        },
+        {
+            "trait_type": "KBI File 3563",
+            "value": "69 77 69 65 31"
+        }
+    ]
+}

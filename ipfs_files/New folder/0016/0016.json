@@ -1,0 +1,29 @@
+{
+    "name": "LUCID",
+    "description": "Diamonds are forever so we decided to create this from the finest diamond we could find on the roof of an abandoned building. Painted in the heart of Niksic city.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmcaTnkH82g4mYq2akCQtmEGrfKVauCrYSrQG9vMBDSrxd/0016_LUCID.gif",
+    "external_url": "https://kiwie1001.com/nft0016/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmcaTnkH82g4mYq2akCQtmEGrfKVauCrYSrQG9vMBDSrxd/0016_LUCID.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "42.7765612"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "18.9479935"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0016/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2.2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "2m"
+        }
+    ]
+}

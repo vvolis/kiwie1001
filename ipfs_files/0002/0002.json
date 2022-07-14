@@ -1,0 +1,29 @@
+{
+    "name": "PINKS",
+    "description": "The artwork is located in a quiet area and is visible from the main road nearby. Excellent choice for someone who wants to keep their artwork away from too much attention. Painted with the permission issued by citizens of Riga. Artwork size 2m x 1.8m. Go see the wall: https://kiwie1001.com/nft0002/",
+    "image": "https://gateway.pinata.cloud/ipfs/QmSQLjETU1YUb996JG56dgajYpFoVX1SokW2qHqnuquBmA/0002.gif",
+    "external_url": "https://kiwie1001.com/nft0002/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmSQLjETU1YUb996JG56dgajYpFoVX1SokW2qHqnuquBmA/0002.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "56.964808"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "24.072019"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0002/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "1.8m"
+        }
+    ]
+}

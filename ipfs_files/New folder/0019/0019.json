@@ -1,0 +1,29 @@
+{
+    "name": "FURY",
+    "description": "Perfect companion to have in long night walks. Someone attacking you with a stick? No worries, this big boy will take care of it. Painted on a railroad station building.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmZKGJcERvKy6Updwvu9yBZRznzbaX2VcRxWD6WygD7uzy/0019_FURY.gif",
+    "external_url": "https://kiwie1001.com/nft0019/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmZKGJcERvKy6Updwvu9yBZRznzbaX2VcRxWD6WygD7uzy/0019_FURY.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "42.138845"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "19.050798"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0019/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "2m"
+        }
+    ]
+}

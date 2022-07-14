@@ -1,0 +1,29 @@
+{
+    "name": "REBAR",
+    "description": "These Kiwies really wanted to help with the construction of the stadium. And they did! Here's CONCRETE evidence.  Painted on an abandoned stadium construction in Vilnius.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/GIFS/0021.gif",
+    "external_url": "https://kiwie1001.com/nft0021/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/MP4/0021.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "54.708118"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "25.25900"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0021/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "4m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "12m"
+        }
+    ]
+}

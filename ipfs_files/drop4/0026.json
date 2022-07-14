@@ -1,0 +1,29 @@
+{
+    "name": "RADIOACTIVE",
+    "description": "This Kiwie thrifted vintage orange Fiestaware dishes one year ago. Anyone got any ideas what happened?",
+    "image": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/GIFS/0026.gif",
+    "external_url": "https://kiwie1001.com/nft0026/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/MP4/0026.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "54.8776290"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "23.9125824"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0026/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "3m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "2.5m"
+        }
+    ]
+}

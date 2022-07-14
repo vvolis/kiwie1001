@@ -1,0 +1,29 @@
+{
+    "name": "GUARDIAN",
+    "description": "This one's been to places and seen things. This Kiwie decided to stay here and guard his favorite kebab shop. And after your first order here, you will understand why.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/GIFS/0024.gif",
+    "external_url": "https://kiwie1001.com/nft0024/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/MP4/0024.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "54.7437676"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "25.2779827"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0024/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "1.5m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "1.5m"
+        }
+    ]
+}

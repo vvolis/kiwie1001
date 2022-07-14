@@ -1,0 +1,33 @@
+{
+    "name": "META",
+    "description": "Accidentally entered and got stuck in the metaverse. This Kiwie monster is painted in the centre of Tallinn on the side of the Linnahall building.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmXnzSw8o9jtQ8g26ihmzT4aeLxcx9Wedoj8wgrV1hdTGc/RARIBLE-0010.gif",
+    "external_url": "https://kiwie1001.com/nft0010/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmXnzSw8o9jtQ8g26ihmzT4aeLxcx9Wedoj8wgrV1hdTGc/RARIBLE%200010.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "59.4466985"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "24.7523609"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0010/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "2m"
+        },
+        {
+            "trait_type": "KBI File 3565",
+            "value": "6f 6d 2f 73 65"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "name": "SKY",
+    "description": "Despite being painted back in October 2018 in Liverpool, it still looks like it was painted yesterday. This artwork is in a very visible location in the Baltic Triangle area, where thousands of people see it every day. Artwork size 2m x 1.8m. Go see the wall: https://kiwie1001.com/nft0005/",
+    "image": "https://gateway.pinata.cloud/ipfs/QmNRYKirKBraYArvL21EAF2w3kHq5z8NYzzTDhLgrqK7GC/0005.gif",
+    "external_url": "https://kiwie1001.com/nft0005/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmNRYKirKBraYArvL21EAF2w3kHq5z8NYzzTDhLgrqK7GC/0005.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "53.396155"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "-2.980751"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0005/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "1.8m"
+        }
+    ]
+}

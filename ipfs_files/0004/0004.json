@@ -1,0 +1,29 @@
+{
+    "name": "COAL",
+    "description": "This piece was painted in a very visible location to bring awareness about unspoken suicide problems amongst teenagers. Painted in August 2020 with permission from the owner of the building. Artwork size 3m x 2.5m. Go see the wall: https://kiwie1001.com/nft0004/",
+    "image": "https://gateway.pinata.cloud/ipfs/Qmb7UUoNoHc6TdS8iTo5pC6ddpuiHdUyjgnzd5REweXbk4/0004.gif",
+    "external_url": "https://kiwie1001.com/nft0004/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/Qmb7UUoNoHc6TdS8iTo5pC6ddpuiHdUyjgnzd5REweXbk4/0004.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "56.941868"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "24.127283"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0004/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "3m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "2.5m"
+        }
+    ]
+}

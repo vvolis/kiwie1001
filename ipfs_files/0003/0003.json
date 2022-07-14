@@ -1,0 +1,29 @@
+{
+    "name": "BARONG",
+    "description": "Private guardian against bad demons. This baby will protect you wherever you’ll go. Painted in October 2019 between rice fields in Joshua District, Bali. Artwork size 2m x 1.8m. Go see the wall: https://kiwie1001.com/nft0003/",
+    "image": "https://gateway.pinata.cloud/ipfs/QmQt8dAyVczVrDUzCCDvGSLrRem7eFbAS6EaSsetMVCuBn/0003.gif",
+    "external_url": "https://kiwie1001.com/nft0003/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmQt8dAyVczVrDUzCCDvGSLrRem7eFbAS6EaSsetMVCuBn/0003.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "-8.596402"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "115.085269"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0003/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "1.8m"
+        }
+    ]
+}

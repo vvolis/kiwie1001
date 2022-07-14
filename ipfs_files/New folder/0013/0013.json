@@ -1,0 +1,29 @@
+{
+    "name": "FUZZ",
+    "description": "Finest breed of local mountain sheeps. Born in the Montenegro mountains, this Kiwie will always make you feel warm, even if it’s cold as hell outside. Painted in between the mountains, on a wall beneath a road, hidden from the public eye.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmTjJVmAuHj4Y9SinSCoemtrUgeMZXh3UDPiQJ222zK5JJ/0013_FUZZ.gif",
+    "external_url": "https://kiwie1001.com/nft0013/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmTjJVmAuHj4Y9SinSCoemtrUgeMZXh3UDPiQJ222zK5JJ/0013_FUZZ.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "43.091354"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "19.105116"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0013/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "1.8m"
+        }
+    ]
+}

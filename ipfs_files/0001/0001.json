@@ -1,0 +1,29 @@
+{
+    "name": "<vv>",
+    "description": "<vv> Go see the wall: https://kiwie1001.com/nft0001/",
+    "image": "<vv> https://gateway.pinata.cloud/ipfs/QmZgDgJVSwqykNW3AH21mMzMverVkgRVEEsn52j1wEfnTK/0001.gif",
+    "external_url": "<vv>",
+    "animation_url": "<vv> https://gateway.pinata.cloud/ipfs/QmZgDgJVSwqykNW3AH21mMzMverVkgRVEEsn52j1wEfnTK/0001.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "56<vv><vv><vv><vv><vv>"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "24<vv>"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0001/<vv><vv><vv><vv><vv>"
+        },
+        {
+            "trait_type": "Height",
+            "value": "22m<vv><vv><vv><vv>"
+        },
+        {
+            "trait_type": "Width",
+            "value": "14m<vv><vv><vv><vv><vv><vv>"
+        }
+    ]
+}

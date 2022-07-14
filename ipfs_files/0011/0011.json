@@ -1,0 +1,33 @@
+{
+    "name": "CIRCUS",
+    "description": "Treated like circus animals, the artwork symbolises the hurdle of LGBT movement. Oppressed by conformist society, unable to be fully themselves and understood in the free world. Artwork painted to support LGBT movement.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmSfecWjznJC71tShTtAUm2GuC8cbD7xnGyiXFM21B8sFr/RARIBLE-0011.gif",
+    "external_url": "https://kiwie1001.com/nft0011/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmSfecWjznJC71tShTtAUm2GuC8cbD7xnGyiXFM21B8sFr/RARIBLE%200011.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "56.9566030"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "24.1200884"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0011/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "1.9m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "10m"
+        },
+        {
+            "trait_type": "KBI File 3566",
+            "value": "63 72 65 74 2d"
+        }
+    ]
+}

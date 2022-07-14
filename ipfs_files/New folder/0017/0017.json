@@ -1,0 +1,29 @@
+{
+    "name": "STEPS",
+    "description": "How low can You go? Turns out, there is no limit to that. Explore the deepest lows with this Kiwie, who is heading straight to the centre of the earth. Painted on a building in an abandoned celioze factory.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmVWphWBbgMv6ddBSk7vh5ZDKZt4FKgiv5oZFaj5Tpe8XN/0017_STEPS.gif",
+    "external_url": "https://kiwie1001.com/nft0017/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmVWphWBbgMv6ddBSk7vh5ZDKZt4FKgiv5oZFaj5Tpe8XN/0017_STEPS.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "42.8629640"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "19.8777015"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0017/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "1.8m"
+        }
+    ]
+}

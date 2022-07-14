@@ -1,0 +1,33 @@
+{
+    "name": "ETH",
+    "description": "This Ethereum Kiwie is mining it's own business somewhere in the fields of Estonia in the middle of nowhere. Painted on a brick wall, protected by a tree nearby and a little overhead roof.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmRf32xz6egGAfTP7fHsYn2wvh2z4f25HEPrD9uo3qoDhf/RARIBLE-0009.gif",
+    "external_url": "https://kiwie1001.com/nft0009/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmRf32xz6egGAfTP7fHsYn2wvh2z4f25HEPrD9uo3qoDhf/RARIBLE%200009.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "58.0637533"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "25.5563343"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0009/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "2m"
+        },
+        {
+            "trait_type": "KBI File 3564",
+            "value": "30 30 31 2e 63"
+        }
+    ]
+}

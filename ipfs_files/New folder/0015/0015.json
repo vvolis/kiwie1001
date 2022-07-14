@@ -1,0 +1,29 @@
+{
+    "name": "FIFTY-FIFTY",
+    "description": "Fun fact - Did You know that inside each Kiwie there is a piece of Ethereum stone? Painted in an abandoned building in the middle of Niksic city under a roof.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmSVYkn92s8aPmukCMuUKTs9DyuSde8AfNeBP6JFSrkA4c/0015_50-50.gif",
+    "external_url": "https://kiwie1001.com/nft0015/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmSVYkn92s8aPmukCMuUKTs9DyuSde8AfNeBP6JFSrkA4c/0015_50-50.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "42.7768024"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "18.9492293"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0015/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "4m"
+        }
+    ]
+}

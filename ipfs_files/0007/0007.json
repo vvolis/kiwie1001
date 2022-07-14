@@ -1,0 +1,33 @@
+{
+    "name": "BRIGHT",
+    "description": "This Light bulb, located in an old factory, is used as the main source of light for the whole building. Painted on a metal wall in a safe environment, using a technique of cutting spray-paint cans with a paper knife.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmUHCsXsiSA7e2ZxyQLRPSzeBtz4wQb9EDpR9CkYFdxYxR/RARIBLE-0007.gif",
+    "external_url": "https://kiwie1001.com/nft0007/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmUHCsXsiSA7e2ZxyQLRPSzeBtz4wQb9EDpR9CkYFdxYxR/RARIBLE%200007.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "56.9958833"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "24.1162589"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0007/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "4.10m"
+        },
+        {
+            "trait_type": "Width",
+            "value": " 3.10m"
+        },
+        {
+            "trait_type": "KBI File 3562",
+            "value": "77 77 77 2e 6b"
+        }
+    ]
+}

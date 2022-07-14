@@ -1,0 +1,29 @@
+{
+    "name": "WASTED",
+    "description": "It might look like this piece is damaged from the sun. It is. It was hot. Painted on an abandoned construction on the side of the road.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmPfqRGiQ2ACdi5BB5bAc4gk1HXuygmB2Y3b2nsjDmcmzH/0014_WASTED.gif",
+    "external_url": "https://kiwie1001.com/nft0014/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmPfqRGiQ2ACdi5BB5bAc4gk1HXuygmB2Y3b2nsjDmcmzH/0014_WASTED.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "42.405210"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "19.175079"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0014/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "1.8m"
+        }
+    ]
+}

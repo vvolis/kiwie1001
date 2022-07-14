@@ -1,0 +1,29 @@
+{
+    "name": "BURNOUT",
+    "description": "The roof was literally on fire. No one knows who set the fire, but with this Kiwie you can be sure, he will survive any arsery. Painted on a rooftop of a burned down building.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmcRo1524ee9bVP2ZAdNbbtWuFQ5Fo6ica89upB51V7wng/0018_BURNOUT.gif",
+    "external_url": "https://kiwie1001.com/nft0018/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmcRo1524ee9bVP2ZAdNbbtWuFQ5Fo6ica89upB51V7wng/0018_BURNOUT.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "42.447909"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "19.261313"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0018/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "1.8m"
+        }
+    ]
+}

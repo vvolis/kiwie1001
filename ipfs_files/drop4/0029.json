@@ -1,0 +1,29 @@
+{
+    "name": "SHIPMENT",
+    "description": "This Kiwie's not particularly happy. John Dick promised a trip overseas, though, didn't mention it will be via a shipping company.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmcyMiYdTG5ASE5X1Xu7Y7ZbGG4XkMfdoms3hBh9UnFduB/0029.gif",
+    "external_url": "https://kiwie1001.com/nft0029/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmcyMiYdTG5ASE5X1Xu7Y7ZbGG4XkMfdoms3hBh9UnFduB/0029.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "55.7263212"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "21.0819097"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0029/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "3m"
+        }
+    ]
+}

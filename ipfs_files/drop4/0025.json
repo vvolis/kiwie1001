@@ -1,0 +1,29 @@
+{
+    "name": "BEE",
+    "description": "This Kiwie's buzzin. Working countless of flowers, this one finally is catching its breath. ‘I should probably get back to work. Ehh, maybee later.’",
+    "image": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/GIFS/0025.gif",
+    "external_url": "https://kiwie1001.com/nft0025/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/MP4/0025.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "54.6862728"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "24.9027285"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0025/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "1.5m"
+        }
+    ]
+}

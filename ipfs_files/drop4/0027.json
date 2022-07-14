@@ -1,0 +1,29 @@
+{
+    "name": "PIONEER",
+    "description": "This Kiwie's getting ready for the hunt. Its camouflage allows him to blend in with the background - just in case there's any Aliens around. But, as of now - it is just showing off. Located in an abandoned Pioneer camp, Lithuania.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/GIFS/0027.gif",
+    "external_url": "https://kiwie1001.com/nft0027/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/MP4/0027.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "54.9304724"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "23.7065927"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0027/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "2m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "1.8m"
+        }
+    ]
+}

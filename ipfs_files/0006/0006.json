@@ -1,0 +1,29 @@
+{
+    "name": "OGLE",
+    "description": "The coal placed in front of the Kiwie monster, creates a shadow on the wall, symbolizing the huge hidden potential of an individual, that could be the size of a building. Approximate artwork size 22m x 10m. Go see the wall: https://kiwie1001.com/nft0006/",
+    "image": "https://gateway.pinata.cloud/ipfs/QmR3Bf1naUFRBZS9XuTcMnf2MwNXsh8mwtc37cJAKghkid/0006.gif",
+    "external_url": "https://kiwie1001.com/nft0006/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmR3Bf1naUFRBZS9XuTcMnf2MwNXsh8mwtc37cJAKghkid/0006.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "56.955074"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "24.135471"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0006/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "22m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "10m"
+        }
+    ]
+}

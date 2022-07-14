@@ -1,0 +1,33 @@
+{
+    "name": "KIWIE BIGGIES",
+    "description": "Never run out of your breakfast cereal with the world's largest bowl. Painted in a brand new pump track, this artwork is here to stay.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmQ93W1B88U2tKNAe5fe2PbRUnTBP3FPwUJugJN5YZsTrN/RARIBLE-0012-2.gif",
+    "external_url": "https://kiwie1001.com/nft0012/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmQ93W1B88U2tKNAe5fe2PbRUnTBP3FPwUJugJN5YZsTrN/RARIBLE%200012%202.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "56.8810070"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "24.0602202"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0012/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "12m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "12m"
+        },
+        {
+            "trait_type": "KBI File 3567",
+            "value": "73 65 72 76 69 63 65"
+        }
+    ]
+}

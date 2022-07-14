@@ -1,0 +1,29 @@
+{
+    "name": "RECEIPT",
+    "description": "CHECK out this Kiwie. Tried to figure out how printers work. Got sucked in. At least, he got his eggs, bread and milk. What's for breakfast?",
+    "image": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/GIFS/0028.gif",
+    "external_url": "https://kiwie1001.com/nft0028/",
+    "animation_url": "https://gateway.pinata.cloud/ipfs/QmYhH7CfFnrcCwZwzCN9CKsNr4HqZjLixJYkxoaEkWx9z2/MP4/0028.mp4",
+    "attributes": [
+        {
+            "trait_type": "Latitude",
+            "value": "55.8044198"
+        },
+        {
+            "trait_type": "Longitude",
+            "value": "21.1120725"
+        },
+        {
+            "trait_type": "External link",
+            "value": "https://kiwie1001.com/nft0028/"
+        },
+        {
+            "trait_type": "Height",
+            "value": "3m"
+        },
+        {
+            "trait_type": "Width",
+            "value": "4m"
+        }
+    ]
+}
